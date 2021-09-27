@@ -1,3 +1,6 @@
 .result-container {
     margin: 50px 0;
 }
+.result-container h3 {
+    text-transform: capitalize;
+}

@@ -5,13 +5,13 @@ import App from './App';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fab } from '@fortawesome/free-brand-svg-icons'
-import { faCheckSquare, faCoffee, faClock, faBackward, faPlay, faPause, faForward} from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faClock, faBackward, faPlay, faPause, faForward, faSearch} from '@fortawesome/free-solid-svg-icons'
 // import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons' 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 // import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCheckSquare, faCoffee, faClock, faBackward, faPlay, faPause, faForward)
+library.add(faCheckSquare, faCoffee, faClock, faBackward, faPlay, faPause, faForward, faSearch)
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

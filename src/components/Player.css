@@ -1,7 +1,7 @@
 .media-player-bar {
     width: 100vw;
     height: 100px;
-    background-color: aqua;
+    background-color: #474b54;
     bottom: 0;
     position: fixed;
     z-index: 102;
@@ -47,6 +47,7 @@
     position: fixed;
     right: 0px;
     margin: 10px 16px;
+    z-index: 1001;
 }
 .close-btn:hover {
     color: rgb(218, 218, 218);

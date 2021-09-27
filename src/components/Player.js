@@ -20,7 +20,6 @@ const Player = ({musicState, setMusicState}) => {
 
     const renderInfo = () => {
         if('artistName' in musicState.contentInfo) {
-            console.log("HEYEHEYEHEYE!")
             return (
                 <div className="current-content">
                     <img src={musicState.contentInfo.artworkUrl100} alt="" />

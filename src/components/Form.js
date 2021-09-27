@@ -1,4 +1,6 @@
 import React from 'react'
+import './Form.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Form = ({setSearchResult}) => {
     const submitButtonHandler = (e) => {
@@ -34,10 +36,12 @@ const Form = ({setSearchResult}) => {
         .catch(error => console.log(error))
     }
     return (
-        <div>
+        <div className="form-container">
             <form id="search-form">
                 <input type="text" id="search-input" placeholder="search"/>
-                <button onClick={submitButtonHandler} >Submit</button>
+                <button id="search-btn" onClick={submitButtonHandler} >
+                    <FontAwesomeIcon icon="search"/>
+                </button>
             </form>
             
         </div>
