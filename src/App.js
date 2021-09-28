@@ -12,6 +12,8 @@ function App() {
     playing: false,
     controls: true,
     visible: false,
+    player: null,
+    contentType: "other",
     contentInfo: {},
   });
   // setMusicState({

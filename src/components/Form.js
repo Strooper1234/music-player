@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Form = ({setSearchResult}) => {
     const submitButtonHandler = (e) => {
         e.preventDefault();
-        const value = document.querySelector('#search-input').value
-        console.log(value);
+        const value = document.querySelector('#search-input').value;
         
         itunesSearch(value);
     };
@@ -20,16 +19,12 @@ const Form = ({setSearchResult}) => {
         // }
         // console.log(payload)
         fetch('https://itunes.apple.com/search?media=all&term=' + search.replace(' ', '+') + '&limit=25')
-        // fetch('https://itunes.apple.com/search?term=jack+johnson')
         .then(response => {
-            console.log(response);
             return response.json();
         })
         .then( data => {
             const res = data.results;
-            console.log(res);
             const group_results = groupBy(res, 'kind');
-            console.log("grouped ", group_results);
             // setSearchResult(res);
             setSearchResult(group_results);
         })
